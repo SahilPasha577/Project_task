@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Name"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Age"
+            android:layout_below="@id/name"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/hob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Roll Number"
+            android:layout_below="@id/age"
+            android:inputType="textUri"/>
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mob Number"
+            android:layout_below="@id/hob"
+            android:inputType="phone"/>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Cell Number"
+            android:layout_below="@id/phone"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/caps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Expereince"
+            android:layout_below="@id/number"
+            android:inputType="textMultiLine|textCapSentences"/>
+        <AutoCompleteTextView
+            android:id="@+id/auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Education"
+            android:layout_below="@id/caps"/>
+        <Button
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/auto"
+            android:layout_marginTop="10dp"
+            android:padding="1mm"
+            android:text="Send"
+            android:scrollbarSize="5dp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
